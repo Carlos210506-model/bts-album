@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="theme-color" content="#5c168b">
+
+    <title>Our Purple Story | BTS Album</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="header">
+        <div class="logo">
+            BTS <span>💜</span>
+        </div>
+
+        <p>OUR PURPLE STORY</p>
+    </header>
+
+    <main class="album">
+
+        <!-- PORTADA PRINCIPAL -->
+
+        <section class="cover" id="inicio">
+
+            <div class="cover-content">
+
+                <p class="edition">
+                    SPECIAL ARMY EDITION
+                </p>
+
+                <h1>BTS</h1>
+                <h2>OUR PURPLE STORY</h2>
+
+                <div class="cover-photo">
+
+                    <img
+                        src="img/portada.jpg"
+                        alt="Portada de BTS"
+                        onerror="this.style.display='none'"
+                    >
+
+                    <span>
+                        7 STARS · 1 UNIVERSE
+                    </span>
+
+                </div>
+
+                <p class="cover-message">
+                    Un pequeño universo de recuerdos,
+                    música y momentos especiales,
+                    creado especialmente para ti.
+                </p>
+
+                <button id="openAlbum" type="button">
+                    ABRIR MI ÁLBUM ✨
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- CONTENIDO DEL ÁLBUM -->
+
+        <div id="albumContent" hidden>
+
+            <!-- NAVEGACIÓN -->
+
+            <nav class="album-nav">
+
+                <a href="#coleccion">
+                    BTS
+                </a>
+
+                <a href="#taehyung">
+                    Especial V
+                </a>
+
+                <a href="#carta">
+                    Carta 💌
+                </a>
+
+            </nav>
+
+            <!-- PÁGINA 1: COLECCIÓN BTS -->
+
+            <section class="album-page" id="coleccion">
+
+                <div class="page-heading">
+
+                    <span>
+                        PAGINA 01 · BTS COLLECTION
+                    </span>
+
+                    <h2>THE SEVEN STARS</h2>
+
+                    <p>
+                        Siete integrantes, una historia
+                        y millones de recuerdos.
+                    </p>
+
+                </div>
+
+                <div class="collection-info">
+
+                    <span>
+                        COLECCIÓN BTS
+                    </span>
+
+                    <span id="btsCounter">
+                        0 / 20
+                    </span>
+
+                </div>
+
+                <!-- LAS FIGURITAS SE GENERAN CON JAVASCRIPT -->
+
+                <div
+                    class="sticker-grid"
+                    id="btsGrid"
+                ></div>
+
+                <p class="page-footer">
+                    Toca una figurita y personalízala
+                    con tu fotografía favorita. 💜
+                </p>
+
+            </section>
+
+            <!-- PÁGINA 2: ESPECIAL V -->
+
+            <section
+                class="album-page v-page"
+                id="taehyung"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        PAGE 02 · SPECIAL EDITION
+                    </span>
+
+                    <h2>KIM TAEHYUNG</h2>
+
+                    <p>
+                        Una colección especial dedicada
+                        a tu integrante favorito. 🐻
+                    </p>
+
+                </div>
+
+                <div class="v-banner">
+
+                    <span>V</span>
+
+                    <div>
+
+                        <h3>
+                            TAEHYUNG COLLECTION
+                        </h3>
+
+                        <p>
+                            Singularity · Winter Bear · Slow Dancing
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="collection-info">
+
+                    <span>
+                        ESPECIAL V
+                    </span>
+
+                    <span id="vCounter">
+                        0 / 8
+                    </span>
+
+                </div>
+
+                <!-- PHOTOCARDS DE V -->
+
+                <div
+                    class="sticker-grid"
+                    id="vGrid"
+                ></div>
+
+                <p class="page-footer">
+                    Un pequeño rincón para guardar
+                    tus fotografías favoritas de Taehyung. ♡
+                </p>
+
+            </section>
+
+            <!-- PÁGINA 3: CARTA SECRETA -->
+
+            <section
+                class="album-page letter-page"
+                id="carta"
+            >
+
+                <div class="page-heading">
+
+                    <span>
+                        FINAL PAGE · JUST FOR YOU
+                    </span>
+
+                    <h2>A LETTER FOR YOU</h2>
+
+                    <p>
+                        Hay algo especial esperando por ti.
+                    </p>
+
+                </div>
+
+                <!-- SOBRE INTERACTIVO -->
+
+                <button
+                    class="envelope"
+                    id="envelope"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="secretLetter"
+                >
+
+                    💌
+
+                    <span>
+                        Toca para abrir
+                    </span>
+
+                </button>
+
+                <!-- CARTA OCULTA -->
+
+                <div
+                    class="secret-letter"
+                    id="secretLetter"
+                    hidden
+                >
+
+                    <h3>Para ti 💜</h3>
+
+                    <p>
+                        Quería regalarte algo diferente,
+                        algo que pudieras guardar y visitar
+                        cuando quisieras.
+                    </p>
+
+                    <p>
+                        Sé que BTS ocupa un lugar especial
+                        en tu corazón, así que preparé este
+                        pequeño universo morado para ti.
+                    </p>
+
+                    <p>
+                        Espero que cada fotografía,
+                        canción y pequeño detalle
+                        te haga sonreír.
+                    </p>
+
+                    <p>
+                        Este álbum también es tuyo
+                        para personalizarlo con todos
+                        esos momentos que te gustan.
+                    </p>
+
+                    <p class="letter-signature">
+                        I Purple You ♡
+                    </p>
+
+                </div>
+
+                <!-- DESPEDIDA -->
+
+                <div class="ending">
+
+                    <h2>보라해 💜</h2>
+
+                    <p>I PURPLE YOU</p>
+
+                    <a
+                        href="#inicio"
+                        id="restart"
+                    >
+                        Volver a la portada ↺
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- MODAL DE PHOTOCARDS -->
+
+    <div
+        class="modal"
+        id="stickerModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+        hidden
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                id="closeModal"
+                type="button"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+            <!-- FOTOGRAFÍA AMPLIADA -->
+
+            <div id="modalImage"></div>
+
+            <!-- INFORMACIÓN -->
+
+            <h3 id="modalTitle"></h3>
+
+            <p id="modalDescription"></p>
+
+            <!-- PERSONALIZACIÓN -->
+
+            <div class="photo-actions">
+
+                <label
+                    for="uploadPhoto"
+                    class="upload-button"
+                >
+                    📷 Cambiar fotografía
+                </label>
+
+                <input
+                    type="file"
+                    id="uploadPhoto"
+                    accept="image/*"
+                    hidden
+                >
+
+                <button
+                    id="removePhoto"
+                    class="remove-button"
+                    type="button"
+                    hidden
+                >
+                    🗑️ Restaurar figurita
+                </button>
+
+                <p class="upload-hint">
+                    Elige una fotografía desde la
+                    galería de tu celular.
+                </p>
+
+                <p
+                    id="uploadStatus"
+                    class="upload-status"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+        MADE WITH 💜 FOR A SPECIAL ARMY
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
